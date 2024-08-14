@@ -13,7 +13,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Design TicketMaster.excalidraw.md"
+                "file": "Excalidraw/How to Design A DropBox.md"
               }
             }
           },
@@ -113,7 +113,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Design TicketMaster.excalidraw.md",
+                "file": "Excalidraw/How to Design A DropBox.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -130,7 +130,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Design TicketMaster.excalidraw.md",
+                "file": "Excalidraw/How to Design A DropBox.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -153,7 +153,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Design TicketMaster.excalidraw.md"
+                "file": "Excalidraw/How to Design A DropBox.md"
               }
             }
           }
@@ -178,6 +178,9 @@
   },
   "active": "cc65d9257f0c5986",
   "lastOpenFiles": [
+    "Excalidraw/financeChat.excalidraw.md",
+    "Welcome.md",
+    "Excalidraw/Design TicketMaster.excalidraw.md",
     "Excalidraw/How to Design A DropBox.md",
     "Excalidraw/SystemDesignConcepts&IntertviewPrep.excalidraw.md",
     "Excalidraw/What happens when you type a url into a brower.excalidraw.md",
@@ -191,8 +194,6 @@
     "Excalidraw/DataBases.excalidraw.md",
     "Excalidraw/browser.excalidraw.md",
     "Excalidraw/How to Design a TinyURL.excalidraw.md",
-    "Excalidraw/Design TicketMaster.excalidraw.md",
-    "Excalidraw/financeChat.excalidraw.md",
     "Excalidraw/Drawing 2024-07-16 19.30.37.excalidraw.md",
     "Excalidraw/financeChat.excalidraw",
     "Excalidraw/ExcalidrawStartup.md",
@@ -204,7 +205,6 @@
     "Excalidraw/Thinking Maps.md",
     "Untitled.md",
     "Excalidraw/How to Design YouTube.excalidraw.md",
-    "Excalidraw/Templates/DefaultDrawing.excalidraw.md",
     "Excalidraw/Libraries/A4_sheets.excalidrawlib",
     "Excalidraw/Libraries/basic-system-design.excalidrawlib",
     "Excalidraw/Libraries/A4_vertical.excalidrawlib",
