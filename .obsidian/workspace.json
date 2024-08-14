@@ -1,0 +1,222 @@
+{
+  "main": {
+    "id": "9752608f46162caa",
+    "type": "split",
+    "children": [
+      {
+        "id": "7b39e4f779d8fef4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "cc65d9257f0c5986",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Design TicketMaster.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "02d50bc9b04aafca",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Progress.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "106e19066b40fddd",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/How to Design a TinyURL.excalidraw.md"
+              }
+            }
+          },
+          {
+            "id": "5cb774913e38d560",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/RoughNotes.excalidraw.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3c958c80367cb1a9",
+    "type": "split",
+    "children": [
+      {
+        "id": "04b2884a2b8c216c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2ed25d2c61a48f86",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "9deed31ce9d37eba",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "108894b2976c6b98",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 368.5
+  },
+  "right": {
+    "id": "101abc8928c9b3b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "3689f633b08d0e2c",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5cabcce5e0648749",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Excalidraw/Design TicketMaster.excalidraw.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "1ab25ea584a864d8",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Excalidraw/Design TicketMaster.excalidraw.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "8f4313070672e086",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "1b40712cc61a2b12",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Excalidraw/Design TicketMaster.excalidraw.md"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-excalidraw-plugin:Create new drawing": false
+    }
+  },
+  "active": "cc65d9257f0c5986",
+  "lastOpenFiles": [
+    "Excalidraw/How to Design A DropBox.md",
+    "Excalidraw/SystemDesignConcepts&IntertviewPrep.excalidraw.md",
+    "Excalidraw/What happens when you type a url into a brower.excalidraw.md",
+    "Excalidraw/RoughNotes.excalidraw.md",
+    "Excalidraw/Progress.excalidraw.md",
+    "Excalidraw/Drawing 2024-08-01 13.17.50.excalidraw.md",
+    "Excalidraw/Drawing 2024-07-21 12.16.22.excalidraw.md",
+    "Excalidraw/Drawing 2024-08-01 13.39.51.excalidraw.md",
+    "Excalidraw/Drawing 2024-08-01 17.06.34.excalidraw.md",
+    "Excalidraw/Drawing 2024-08-07 11.50.34.excalidraw.md",
+    "Excalidraw/DataBases.excalidraw.md",
+    "Excalidraw/browser.excalidraw.md",
+    "Excalidraw/How to Design a TinyURL.excalidraw.md",
+    "Excalidraw/Design TicketMaster.excalidraw.md",
+    "Excalidraw/financeChat.excalidraw.md",
+    "Excalidraw/Drawing 2024-07-16 19.30.37.excalidraw.md",
+    "Excalidraw/financeChat.excalidraw",
+    "Excalidraw/ExcalidrawStartup.md",
+    "Excalidraw/Kafka.excalidraw.md",
+    "Excalidraw/Drawing 2024-07-17 09.52.42.excalidraw.md",
+    "Excalidraw/Drawing 2024-07-18 22.11.34.excalidraw.md",
+    "Excalidraw/Drawing 2024-08-08 21.10.05.excalidraw.md",
+    "Excalidraw/Vocabulary.excalidraw.md",
+    "Excalidraw/Thinking Maps.md",
+    "Untitled.md",
+    "Excalidraw/How to Design YouTube.excalidraw.md",
+    "Excalidraw/Templates/DefaultDrawing.excalidraw.md",
+    "Excalidraw/Libraries/A4_sheets.excalidrawlib",
+    "Excalidraw/Libraries/basic-system-design.excalidrawlib",
+    "Excalidraw/Libraries/A4_vertical.excalidrawlib",
+    "Excalidraw/Libraries/A4_sheet_Potrait.excalidrawlib",
+    "Excalidraw/Libraries/A4_horizontal.excalidrawlib",
+    "Excalidraw/Libraries/A4_LandScape.excalidrawlib",
+    "Excalidraw/Libraries",
+    "Excalidraw/Library/basic-system-design.excalidrawlib",
+    "Excalidraw/Library/A4_vertical.excalidrawlib",
+    "Excalidraw/Scripts/Downloaded/Set Grid.svg",
+    "Excalidraw/Scripts/Downloaded/Excalidraw Collaboration Frame.svg",
+    "Excalidraw/Scripts/Downloaded/Scribble Helper.svg",
+    "Pasted Image 20240711135303_573.jpg"
+  ]
+}
