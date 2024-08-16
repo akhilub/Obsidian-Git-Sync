@@ -13,17 +13,27 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Drawing 2024-07-17 01.27.59.excalidraw.md"
+                "file": "Excalidraw/Meta.excalidraw.md"
               }
             }
           },
           {
-            "id": "22224d920f36542f",
+            "id": "47988b5a6ea0c54e",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Meta.excalidraw.md"
+                "file": "Excalidraw/Thinking Maps.md"
+              }
+            }
+          },
+          {
+            "id": "4924909abb240100",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Excalidraw/Drawing 2024-08-16 12.47.04.excalidraw.md"
               }
             }
           },
@@ -58,7 +68,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -108,8 +118,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5,
-    "collapsed": true
+    "width": 368.5
   },
   "right": {
     "id": "101abc8928c9b3b9",
@@ -125,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Meta.excalidraw.md",
+                "file": "Excalidraw/Drawing 2024-08-16 12.47.04.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Meta.excalidraw.md",
+                "file": "Excalidraw/Drawing 2024-08-16 12.47.04.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Meta.excalidraw.md"
+                "file": "Excalidraw/Drawing 2024-08-16 12.47.04.excalidraw.md"
               }
             }
           }
@@ -188,44 +197,44 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "22224d920f36542f",
+  "active": "4924909abb240100",
   "lastOpenFiles": [
-    "Excalidraw/Drawing 2024-07-17 01.27.59.excalidraw.md",
+    "Excalidraw/Thinking Maps.md",
+    "Excalidraw/Drawing 2024-08-16 12.47.04.excalidraw.md",
+    "Excalidraw/ChatGptLike_Assistant.excalidraw",
+    "Excalidraw/Kafka.excalidraw.md",
     "Excalidraw/Meta.excalidraw.md",
-    "Excalidraw/DataBases.excalidraw.md",
-    "Excalidraw/How to Design A DropBox.md",
+    "Excalidraw/Progress.excalidraw.md",
+    "Excalidraw/RoughNotes.excalidraw.md",
+    "Excalidraw/Senior Software Developer at Avalon Bay .excalidraw.md",
+    "Excalidraw/SQL.excalidraw.md",
     "Excalidraw/financeChat.excalidraw.md",
+    "Excalidraw/browser.excalidraw.md",
+    "Excalidraw/DataBases.excalidraw.md",
+    "Excalidraw/How to Design YouTube.excalidraw.md",
+    "Excalidraw/How to Design YouTube?.excalidraw.md",
+    "Excalidraw/SystemDesignConcepts&IntertviewPrep.excalidraw.md",
+    "Excalidraw/Vocabulary.excalidraw.md",
+    "Excalidraw/What happens when you type a url into a brower.excalidraw.md",
+    "Meta_Interview_Guide.pdf",
+    "Meta_Interview_Guide 2.pdf",
+    "Meta_Interview_Guide 1.pdf",
+    "Excalidraw/Drawing 2024-08-01 17.06.34.excalidraw.md",
+    "Excalidraw/Drawing 2024-08-07 11.50.34.excalidraw.md",
+    "Excalidraw/Drawing 2024-08-14 15.37.19.excalidraw.md",
+    "Excalidraw/Drawing 2024-07-17 01.27.59.excalidraw.md",
+    "Excalidraw/How to Design A DropBox.md",
     "Welcome.md",
     "Excalidraw/Design TicketMaster.excalidraw.md",
-    "Excalidraw/SystemDesignConcepts&IntertviewPrep.excalidraw.md",
-    "Excalidraw/What happens when you type a url into a brower.excalidraw.md",
-    "Excalidraw/RoughNotes.excalidraw.md",
-    "Excalidraw/Progress.excalidraw.md",
     "Excalidraw/Drawing 2024-08-01 13.17.50.excalidraw.md",
     "Excalidraw/Drawing 2024-07-21 12.16.22.excalidraw.md",
     "Excalidraw/Drawing 2024-08-01 13.39.51.excalidraw.md",
-    "Excalidraw/Drawing 2024-08-01 17.06.34.excalidraw.md",
-    "Excalidraw/Drawing 2024-08-07 11.50.34.excalidraw.md",
-    "Excalidraw/browser.excalidraw.md",
-    "Excalidraw/How to Design a TinyURL.excalidraw.md",
-    "Excalidraw/Drawing 2024-07-16 19.30.37.excalidraw.md",
     "Excalidraw/financeChat.excalidraw",
-    "Excalidraw/ExcalidrawStartup.md",
-    "Excalidraw/Kafka.excalidraw.md",
-    "Excalidraw/Drawing 2024-07-17 09.52.42.excalidraw.md",
-    "Excalidraw/Drawing 2024-07-18 22.11.34.excalidraw.md",
-    "Excalidraw/Drawing 2024-08-08 21.10.05.excalidraw.md",
-    "Excalidraw/Vocabulary.excalidraw.md",
-    "Excalidraw/Thinking Maps.md",
     "Excalidraw/Libraries/A4_sheets.excalidrawlib",
     "Excalidraw/Libraries/basic-system-design.excalidrawlib",
     "Excalidraw/Libraries/A4_vertical.excalidrawlib",
     "Excalidraw/Libraries/A4_sheet_Potrait.excalidrawlib",
     "Excalidraw/Libraries/A4_horizontal.excalidrawlib",
-    "Excalidraw/Libraries/A4_LandScape.excalidrawlib",
-    "Excalidraw/Libraries",
-    "Excalidraw/Library/basic-system-design.excalidrawlib",
-    "Excalidraw/Library/A4_vertical.excalidrawlib",
     "Excalidraw/Scripts/Downloaded/Set Grid.svg",
     "Excalidraw/Scripts/Downloaded/Excalidraw Collaboration Frame.svg",
     "Excalidraw/Scripts/Downloaded/Scribble Helper.svg",
