@@ -23,7 +23,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Meta.excalidraw.md"
+                "file": "Excalidraw/How to design an Authentication System.md"
               }
             }
           },
@@ -124,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Meta.excalidraw.md",
+                "file": "Excalidraw/How to design an Authentication System.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -141,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Meta.excalidraw.md",
+                "file": "Excalidraw/How to design an Authentication System.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Meta.excalidraw.md"
+                "file": "Excalidraw/How to design an Authentication System.md"
               }
             }
           }
@@ -187,10 +187,13 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "2ed25d2c61a48f86",
+  "active": "47988b5a6ea0c54e",
   "lastOpenFiles": [
-    "Pasted Image 20240817232627_912.png",
+    "Excalidraw/How to Design a TinyURL.excalidraw.md",
+    "Excalidraw/How to Design A DropBox.md",
     "Excalidraw/Meta.excalidraw.md",
+    "Meta_Interview_Guide.pdf",
+    "Pasted Image 20240817232627_912.png",
     "Excalidraw/Thinking Maps.md",
     "Excalidraw/Drawing 2024-08-16 12.47.04.excalidraw.md",
     "Excalidraw/ChatGptLike_Assistant.excalidraw",
@@ -207,14 +210,12 @@
     "Excalidraw/SystemDesignConcepts&IntertviewPrep.excalidraw.md",
     "Excalidraw/Vocabulary.excalidraw.md",
     "Excalidraw/What happens when you type a url into a brower.excalidraw.md",
-    "Meta_Interview_Guide.pdf",
     "Meta_Interview_Guide 2.pdf",
     "Meta_Interview_Guide 1.pdf",
     "Excalidraw/Drawing 2024-08-01 17.06.34.excalidraw.md",
     "Excalidraw/Drawing 2024-08-07 11.50.34.excalidraw.md",
     "Excalidraw/Drawing 2024-08-14 15.37.19.excalidraw.md",
     "Excalidraw/Drawing 2024-07-17 01.27.59.excalidraw.md",
-    "Excalidraw/How to Design A DropBox.md",
     "Welcome.md",
     "Excalidraw/Design TicketMaster.excalidraw.md",
     "Excalidraw/Drawing 2024-08-01 13.17.50.excalidraw.md",
