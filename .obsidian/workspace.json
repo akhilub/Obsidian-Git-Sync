@@ -108,7 +108,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 368.5
+    "width": 368.5,
+    "collapsed": true
   },
   "right": {
     "id": "101abc8928c9b3b9",
@@ -187,7 +188,7 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "47988b5a6ea0c54e",
+  "active": "2ed25d2c61a48f86",
   "lastOpenFiles": [
     "Pasted Image 20240817232627_912.png",
     "Excalidraw/Meta.excalidraw.md",
