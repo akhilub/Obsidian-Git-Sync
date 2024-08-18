@@ -23,17 +23,7 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Excalidraw/Thinking Maps.md"
-              }
-            }
-          },
-          {
-            "id": "4924909abb240100",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Excalidraw/Drawing 2024-08-16 12.47.04.excalidraw.md"
+                "file": "Excalidraw/Meta.excalidraw.md"
               }
             }
           },
@@ -68,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -134,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Excalidraw/Drawing 2024-08-16 12.47.04.excalidraw.md",
+                "file": "Excalidraw/Meta.excalidraw.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -151,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Excalidraw/Drawing 2024-08-16 12.47.04.excalidraw.md",
+                "file": "Excalidraw/Meta.excalidraw.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -174,7 +164,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Excalidraw/Drawing 2024-08-16 12.47.04.excalidraw.md"
+                "file": "Excalidraw/Meta.excalidraw.md"
               }
             }
           }
@@ -197,13 +187,14 @@
       "obsidian-excalidraw-plugin:Create new drawing": false
     }
   },
-  "active": "4924909abb240100",
+  "active": "47988b5a6ea0c54e",
   "lastOpenFiles": [
+    "Pasted Image 20240817232627_912.png",
     "Excalidraw/Thinking Maps.md",
+    "Excalidraw/Meta.excalidraw.md",
     "Excalidraw/Drawing 2024-08-16 12.47.04.excalidraw.md",
     "Excalidraw/ChatGptLike_Assistant.excalidraw",
     "Excalidraw/Kafka.excalidraw.md",
-    "Excalidraw/Meta.excalidraw.md",
     "Excalidraw/Progress.excalidraw.md",
     "Excalidraw/RoughNotes.excalidraw.md",
     "Excalidraw/Senior Software Developer at Avalon Bay .excalidraw.md",
@@ -228,7 +219,6 @@
     "Excalidraw/Design TicketMaster.excalidraw.md",
     "Excalidraw/Drawing 2024-08-01 13.17.50.excalidraw.md",
     "Excalidraw/Drawing 2024-07-21 12.16.22.excalidraw.md",
-    "Excalidraw/Drawing 2024-08-01 13.39.51.excalidraw.md",
     "Excalidraw/financeChat.excalidraw",
     "Excalidraw/Libraries/A4_sheets.excalidrawlib",
     "Excalidraw/Libraries/basic-system-design.excalidrawlib",
