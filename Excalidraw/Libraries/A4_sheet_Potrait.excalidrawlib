@@ -7,6 +7,43 @@
 			"status": "unpublished",
 			"elements": [
 				{
+					"id": "-IgokWZhbwzTdUJwwiHH7",
+					"type": "rectangle",
+					"x": -6938.539105926597,
+					"y": 4250.347782127767,
+					"width": 2954.4921875,
+					"height": 4191.205021793585,
+					"angle": 0,
+					"strokeColor": "#1e1e1e",
+					"backgroundColor": "transparent",
+					"fillStyle": "solid",
+					"strokeWidth": 4,
+					"strokeStyle": "solid",
+					"roughness": 1,
+					"opacity": 100,
+					"groupIds": [],
+					"frameId": null,
+					"index": "b4h",
+					"roundness": {
+						"type": 3
+					},
+					"seed": 1431491160,
+					"version": 566,
+					"versionNonce": 352745256,
+					"isDeleted": false,
+					"boundElements": null,
+					"updated": 1724121298071,
+					"link": null,
+					"locked": false
+				}
+			],
+			"id": "HD5kOPgsJymp4ud3bEwXE",
+			"created": 1724121355146
+		},
+		{
+			"status": "unpublished",
+			"elements": [
+				{
 					"type": "rectangle",
 					"version": 64,
 					"versionNonce": 477335715,
