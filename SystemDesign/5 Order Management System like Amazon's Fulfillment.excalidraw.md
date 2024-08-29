@@ -416,7 +416,7 @@ In addition to these key metrics, I would set up regular health checks to ensure
 Implementing automated testing using a CI/CD pipeline will enable regular checks, faster deployment, and early detection of issues, contributing to the overall functionality and reliability of the system." ^2e7FaBcr
 
 ## Embedded Files
-1edc3d1a34c14ae829cc649774cad6551fa4cfdb: [[Pasted Image 20240828015938_507.png]]
+1edc3d1a34c14ae829cc649774cad6551fa4cfdb: [[AmazonOMS.png]]
 
 %%
 ## Drawing
