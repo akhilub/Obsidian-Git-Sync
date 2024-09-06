@@ -364,7 +364,7 @@ Note Sharing ^oXtpLsQH
 By combining these strategies, we can create a robust and user-friendly note sharing feature that provides flexible sharing options, strong access controls, and real-time collaboration capabilities." ^zhy5Dd7d
 
 ## Embedded Files
-d40a52a37b842803866b6bc657f95cb8e395af00: [[Pasted Image 20240831115901_632.png]]
+d40a52a37b842803866b6bc657f95cb8e395af00: [[EverNote.png]]
 
 %%
 ## Drawing
