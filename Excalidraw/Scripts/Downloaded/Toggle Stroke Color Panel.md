@@ -1,13 +1,7 @@
----
-name: Toggle Stroke Color Panel
-id: toggle-stroke-color-panel
-description: Toggles the stroke color panel in Excalidraw
-author: Akhil Singh Chauhan
-version: 1.0
-minAppVersion: 2.4.0
----
-
 /*
+[Script Description]
+Video link
+
 ```javascript
 */
 if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
@@ -38,8 +32,9 @@ if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
       appState: { activeTool: { type: "freedraw" } }
     });
 
+
     // Wait briefly to allow UI updates
-    await new Promise((resolve) => setTimeout(resolve, 100));
+    // await new Promise((resolve) => setTimeout(resolve, 10));
 
     // Open the Edit button
     let editButton = document.querySelector('button[aria-label="Edit"]');
@@ -48,30 +43,14 @@ if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
     }
 
     // Wait for UI update
-    await new Promise((resolve) => setTimeout(resolve, 100));
+    await new Promise((resolve) => setTimeout(resolve, 10));
 
     // Find and open the Stroke Color Panel
-    let strokeColorButton = document.querySelector(
-      'button[aria-label="Stroke"], button[title="Show stroke color picker"]'
-    );
+    let strokeColorButton = document.querySelector('button[aria-label="Stroke"], button[title="Show stroke color picker"]');
     if (strokeColorButton) {
       strokeColorButton.click();
-    } else {
-      new Notice("Stroke Color Panel button not found. Ensure Excalidraw is open.");
-      return;
     }
     
-    // // Wait for color picker to appear
-    // await new Promise((resolve) => setTimeout(resolve, 100));
-
-    // // Select the first color from the color picker
-    // let firstColorButton = document.querySelector(".color-picker__top-picks .color-picker__button");
-    // if (firstColorButton) {
-    //   firstColorButton.click();
-    // } else {
-    //   new Notice("Color Picker not found. Ensure Excalidraw is open.");
-    // }
-
     isPanelOpen = true; // Mark panel as open
   }
 
@@ -79,3 +58,7 @@ if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
 } else {
   new Notice("This script requires Excalidraw version 2.4.0 or higher.");
 }
+
+
+
+
