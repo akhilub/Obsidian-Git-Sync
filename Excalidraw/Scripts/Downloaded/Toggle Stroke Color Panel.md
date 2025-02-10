@@ -59,6 +59,3 @@ if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
   new Notice("This script requires Excalidraw version 2.4.0 or higher.");
 }
 
-
-
-
