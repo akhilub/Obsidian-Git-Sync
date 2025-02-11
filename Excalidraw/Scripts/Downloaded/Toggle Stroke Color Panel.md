@@ -1,12 +1,12 @@
 /*
-[Script Description]
-Video link
+Toggles the Stroke color panel on and off when fire with the (Option+D) shortcut.Useful especially when drawing with a pen and need to change stroke color.
+
+[Add video link describing script feature]: #
 
 ```javascript
 */
-if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
-  let isPanelOpen = false; // Track panel state
 
+if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
   async function toggleStrokeColorPanel() {
     await ea.setView("active"); // Ensure Excalidraw is active
 
@@ -17,45 +17,26 @@ if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
       return;
     }
 
-    if (isPanelOpen) {
-      // Close the Edit button and return to previous state
-      let editButton = document.querySelector('button[aria-label="Edit"]');
-      if (editButton) {
-        editButton.click();
-      }
-      isPanelOpen = false;
-      return;
-    }
+    //Keep the canvas in selected tool state only ,no need to change tool
 
-    // Select the Draw (freedraw) tool by updating appState
-    api.updateScene({
-      appState: { activeTool: { type: "freedraw" } }
-    });
-
-
-    // Wait briefly to allow UI updates
-    // await new Promise((resolve) => setTimeout(resolve, 10));
-
-    // Open the Edit button
+    // Open/Close the Edit button on click
     let editButton = document.querySelector('button[aria-label="Edit"]');
     if (editButton) {
       editButton.click();
     }
 
-    // Wait for UI update
+    //Wait for UI update button on click
     await new Promise((resolve) => setTimeout(resolve, 10));
 
-    // Find and open the Stroke Color Panel
+    // // Find and open/close the Stroke Color Panel
     let strokeColorButton = document.querySelector('button[aria-label="Stroke"], button[title="Show stroke color picker"]');
     if (strokeColorButton) {
       strokeColorButton.click();
     }
     
-    isPanelOpen = true; // Mark panel as open
   }
 
   toggleStrokeColorPanel(); // Run the function
 } else {
   new Notice("This script requires Excalidraw version 2.4.0 or higher.");
 }
-
