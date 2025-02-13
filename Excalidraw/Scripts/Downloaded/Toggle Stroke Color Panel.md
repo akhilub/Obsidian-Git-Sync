@@ -3,7 +3,7 @@ Toggles the Stroke color panel on and off when fire with the (Option+D) shortcut
 
 [Add video link describing script feature]: #
 
-```js
+```javascript
 */
 
 if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
@@ -41,6 +41,7 @@ if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
     let colorPicker = document.querySelector('input[type="color"]');
     if (colorPicker) {
         colorPicker.click();
+        new Notice("1. Use arrow keys to select a color, press Enter to confirm.\n2. Press the Escape key to exit");
     }
   }
 
@@ -48,6 +49,7 @@ if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
 } else {
   new Notice("This script requires Excalidraw version 2.4.0 or higher.");
 }
+
 
 
 
