@@ -35,14 +35,14 @@ if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
     }
 
     // Wait for color picker to be available
-    await new Promise((resolve) => setTimeout(resolve, 10));
+    // await new Promise((resolve) => setTimeout(resolve, 10));
 
-    // Try to access color picker after panel is open
-    let colorPicker = document.querySelector('input[type="color"]');
-    if (colorPicker) {
-        colorPicker.click();
-        new Notice("1. Use arrow keys to select a color, press Enter to confirm.\n2. Press the Escape key to exit");
-    }
+    // // Try to access color picker after panel is open
+    // let colorPicker = document.querySelector('input[type="color"]');
+    // if (colorPicker) {
+    //     colorPicker.click();
+    //     new Notice("1. Use arrow keys to select a color, press Enter to confirm.\n2. Press the Escape key to exit");
+    // }
   }
 
   toggleStrokeColorPanel(); // Run the function
