@@ -32,9 +32,10 @@ if (ea.verifyMinimumPluginVersion && ea.verifyMinimumPluginVersion("2.4.0")) {
     let strokeColorButton = document.querySelector('button[aria-label="Stroke"], button[title="Show stroke color picker"]');
     if (strokeColorButton) {
       strokeColorButton.click();
+      new Notice("Use arrow keys to navigate ,press mentioned key to pick a color ");
     }
 
-    // Wait for color picker to be available
+    // Optional: Wait for color picker to be available
     // await new Promise((resolve) => setTimeout(resolve, 10));
 
     // // Try to access color picker after panel is open
