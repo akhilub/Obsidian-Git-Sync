@@ -1,0 +1,426 @@
+---
+
+excalidraw-plugin: parsed
+tags: [excalidraw]
+
+---
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
+
+# Excalidraw Data
+
+## Text Elements
+Design a distributed message queue system like Apache Kafka or RabbitMQ.
+
+Requirements:
+
+Support pub-sub and point-to-point messaging
+Handle millions of messages per second
+Guarantee message delivery
+Support message ordering
+Handle producer/consumer failures
+Persistent message storage
+
+Follow-up Questions:
+
+How would you implement message partitioning?
+How would you handle backpressure?
+How would you implement dead letter queues?
+How would you ensure exactly-once delivery? ^zNmkCULR
+
+1. Requirements
+
+    • Functional
+        - Point-to-Point Messaging and Pub-Sub: Support both broadcast to multiple subscribers and single-consumer daily
+        - Message Delivery Guarantees : Ensure messages are delivered (at least once, at most once or exactly once)
+        - Message Ordering : Gurantees ordering, especially within a single stream or partition
+        - Persistent Message Storage : Durably store messages even if consumers are offline or brokers fail
+
+    • NonFunctional
+        - High Throughput : Handles millions of MPS
+        - High Availability + Fault Tolerance : Survive producer/consumer/broker failures 
+        without data loss or service interruption
+        - Low Latency : Deliver messages with minimal delay (e.g <200 ms)
+        - High Scalability : Horizontally scale to handle increasing message volume and consumers
+    
+ ^UxVExdaT
+
+2. Core Entities:
+    
+    - Producers : Applications sending messages
+    - Consumers : Applications receiving and processing messages 
+    - Brokers(Servers) : Core components that recieve, store and deliver messages
+    - Topics/Queues : Logical channels for categorizing and organizing messages
+                           (Kafka uses topics with partition, RabbitMQ uses queues with exchanges
+    - Messages(Event): The actual data units being transmitted
+
+     ^SZIHmSGX
+
+3. High Level Components
+
+    Client Librabries : For Producers and consumers to interact with MQ
+    Load Balancers : Distribute incoming producers requests access brokers and consumer connections across
+                         partition
+    Broker Cluster : A group of MQ servers for scalability and fault tolerance
+    Storage Layer : For persistant message storage(e.g Distributed File system, Log-Structured storage)
+    Coordination Service : (e.g Zookeeper) for leader election, metadata management and cluster state
+    Monitoring & Alerting : To track system health and performance ^eS9GUjR9
+
+4. API Endpoints or System Interface
+
+    /publish : For producers to send messages to a specified topic/queue
+        {
+            - topic_name
+            - message_payload
+            - message_key
+            - headers (optional)
+        }
+   
+    /subscribe : For consumers to register interest in a topic/queue
+          { - topic_name
+            - consumer_group_id
+          }
+
+    /fetch : (Pull model) For consumers to retrieve messages from a topic/queue partition, specifying an `offset`
+
+    /ack : For consumers to acknowledge message processing (for "at least once" or "exactly once" delivery
+
+    • Management APIs: For creating/deleting topics/queues, viewing cluster status ^m3o8byTe
+
+5. Data Flows
+
+• Producer to Broker
+    - Producer send messages to a LB, which routes them to an available broker in the cluster
+    - Messages for a specific topic (and optionally a partition based on a message key) are appended to a distributed log
+
+• Broker To Storage
+    - Broker durably store messages in their local log segments, which are replicated across multiple brokers for fault tolerance
+  
+• Broker to Consumer : 
+    - In a pull model (like Kafka) consumers periodically fetch messages from assigned partitions on brokers, managing their own offsets
+    - In a push model like Rabbit MQ) brokers push messages to consumers, which then acknowledge receipt
+
+• Consumer to Coordination Service:
+    - Consumers update their consumed `offset` in the coordination service to track progress within a consumer group ^O2UAkKNc
+
+6. Scalability & Optimization
+    
+    • Horizontal Scaling : Add more brokers to increase throughput and storage capacity
+
+    • Partitioning : Divide topics into multiple partitions, distributed across brokers, allowing parallel production and consumption.
+                        Messages with the same key go to the same partition, preserving order.
+
+    • Replication : Replicate partitions across multiple brokers to ensure data durability and high availability in case of broken failures
+
+    • Batching : Producers can batch messages to improve throughput and reduce overhead.
+
+    • Compression : Compress messages to reduce network bandwidth and storage footprint.
+
+    • Pull vs Push : A pull model (Kafka) often allows consumers to control their consumption rate, preventing overload, which is beneficial for
+                        high throughput.
+                       A push model (RabbitMQ) is good for lower latency and complex routing.
+    • Consumer Groups : Allow multiple consumers to process messages to process messages from a topic in parallel, sharing the load   ^GDHfBTdN
+
+System Assessments
+
+• Security : Implement authentication (e.g SASL, TLS)
+               Implement authorization (ACLs for topics/queue)
+               Implement encryption (TLS for data in transit, encryption at rest).
+               
+• Monitoring & Testing
+    
+    - Monitor key metrics : Message rates, latency, disk usage, consumer lag, broker health
+    - Use distributed tracking to track message flow
+    - Implement robust and end-to-end testing, including failure scenarios
+
+ ^SCJcYdBG
+
+Trade-offs
+    
+    - Throughput vs Latency : High throughput often comes with slightly higher latency due to batching 
+                                     and replication overhead
+    
+    - Consistency vs Availability : Stronger consistency (e.g synchronous replication) can impact availability
+                                        if replicas are slow or unavailable
+    
+    - Exactly-Once Semantics : Provides strong guarantees but add complexity and performance overhead
+                                    compared to at-least-once or at-most-once.
+    
+    - Message Retention : Infinite retention is costly, a policy is needed (e.g time-based or size-based cleanup)  
+
+
+Evolution
+    
+    • Schema Evolution
+    • Stream Processing
+    • Cloud Native Deployment
+    • Beyond Zookeeper ^3euVekfM
+
+How would you implement dead letter queues? ^RACB0DGK
+
+How would you ensure exactly-once delivery? ^bMwZhPxb
+
+Q)How would you implement message partitioning? ^Z5cY9D8f
+
+I would implement message partitioning using a hashing algorithm on a message key
+{
+    - userId,
+    - sessionId
+    - eventId (unique)
+}
+This ensures messages related to the same entity go to the same partition, preserving
+order where needed.
+
+If no key is provided, a round-robib strategy or as sticky partitioner could be used for even
+distribution. This allows for horizontal scaling and parallel processing ^8It9NceT
+
+How would you handle backpressure? ^1e8RYD2c
+
+To handle backpressure I would use a combination of strategies
+
+- Producer throttling  : 
+Inform producers to slow down when queries are filling up. This can involve blocking
+producers or having them retry with exponential backoff.
+
+- Dynamic Scaling of consumers :
+Automatically scale out consumer instances based on queue depth or CPU utilization
+
+- Smart consumer pull :  
+Consumers pull fewer messages if they are unable to process them quickly enough
+
+- Load Shedding : 
+If absolutely necessary and acceptable for the use case, prioritize
+critical messages and drop less critical ones during extreme load.
+
+- Queue buffering:
+Leverage bounded queues as a buffer, preventing the system from being overwhelmed while consumers
+catch up ^di5eIPnu
+
+I would implement DLQs are a dedicated queue or topic to store messages 
+that fail processing after a certain number of retires or due to unrecoverable errors
+(e.g malformed messages)
+
+• Messages sent to the DLQ would include metadata like 
+{ - error type
+  - stack trace
+  - retry count for debugging
+}
+
+• A reprocessor service could monitor the DLQ, attempting to reprocess transient failures
+or allowing for manual intervention for permanent issues
+
+• Implement message expiration policies on the DLQ to prevent it from growing indefinitely ^eG6lCZ7j
+
+Achieving true exactly-once delivery is complex but critical. My approach would involve
+
+- Idempotent operations 
+Design consumer processing to be idempotent, meaning processing the same message multiple time yields
+the same result without side effects. This handles duplicated from "at-least-once" delivery
+
+- Unique message identifiers
+Assign a uniqueId to each message. Consumers track processed IDs in a durable store (e.g a DB), discarding
+duplicates
+ 
+- Transactional Processing : 
+Combine message consumption, processing logic and acknowledging the message within a single, atomic transaction.
+If any step fails, the entire transaction rolls back, ensuring the message is re-processed. This often involves an 
+"outbox pattern" or similar transaction mechanisms. 
+
+- Publisher confirms : 
+Producers receive confirmation that messages are successfully persisted by the broker before
+considering them sent.
+
+- Offset management : Consumers commit their processing offsets only after successfully processing a message
+ans persisting any resulting state. ^FhN6f19w
+
+%%
+## Drawing
+```compressed-json
+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
+```
+%%
