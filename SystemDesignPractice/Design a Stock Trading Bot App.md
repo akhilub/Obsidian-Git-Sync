@@ -1,0 +1,113 @@
+---
+
+excalidraw-plugin: parsed
+tags: [excalidraw]
+
+---
+==⚠  Switch to EXCALIDRAW VIEW in the MORE OPTIONS menu of this document. ⚠== You can decompress Drawing data with the command palette: 'Decompress current Excalidraw file'. For more info check in plugin settings under 'Saving'
+
+
+# Excalidraw Data
+
+## Text Elements
+Design a Stock Trading Bot
+    - Zerodha APIs
+    - Zerodha MCP
+    - API Keys for Google to Search the Web
+    - You can use Any LLM Model
+    
+Functional Requirements
+    - Give me buy , hold or sell depending upon my portfolio with reasoning
+    - Execute those call after sending them to user and getting his approval
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Non Functional Requirements
+    - Security 
+    
+
+High Level Design
+
+1. Analyze the user portfolio based on market trends
+2. Recommendation Engine : Generate, buy hold or 
+3. Perform Sentiment Analysis 
+
+
+Lets say 1 year of data for a stock for Ford
+
+News, article, 
+
+GPT series model x
+GPT turbo - 4    x
+
+BERT - go with this
+
+BERT (Bidirectional Encoder Representations from Transformers) is a pioneering open-source, Transformer-based AI model developed by Google in 2018 for natural language processing. 
+It uniquely understands context by analyzing text bidirectionally, revolutionizing search, classification, and language understanding tasks. 
+
+Finbert
+ ^o7jJAtE6
+
+%%
+## Drawing
+```compressed-json
+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
+```
+%%
