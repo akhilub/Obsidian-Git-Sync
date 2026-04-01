@@ -20,12 +20,37 @@ if(!ea.verifyMinimumPluginVersion || !ea.verifyMinimumPluginVersion("2.14.2")) {
   return;
 }
 
+function requestFullscreen() {
+  const el = ea.targetView.ownerDocument.body;
+  if (el.requestFullscreen) {
+    el.requestFullscreen();
+  } else if (el.webkitRequestFullscreen) {
+    el.webkitRequestFullscreen();
+  }
+  ea.targetView.gotoFullscreen();
+}
+
+function exitFullscreen() {
+  const doc = ea.targetView.ownerDocument;
+  if (doc.exitFullscreen) {
+    doc.exitFullscreen();
+  } else if (doc.webkitExitFullscreen) {
+    doc.webkitExitFullscreen();
+  }
+  ea.targetView.exitFullscreen();
+}
+
 async function run() {
   if(window.excalidrawPalmGuard) {
     window.excalidrawPalmGuard()
     return;
   }
   const modal = new ea.FloatingModal(ea.plugin.app);
+  if (modal.bgEl) {
+    modal.containerEl.removeChild(modal.bgEl);
+  }
+  modal.modalEl.style.borderRadius = "6px";
+  modal.contentEl.style.padding = "4px";
   const FULLSCREEN = "Goto fullscreen?";
   let settings = ea.getScriptSettings() || {};
   if(!settings[FULLSCREEN]) {
@@ -94,7 +119,9 @@ async function run() {
   };
   
   // Enter fullscreen view mode
-  if(enableFullscreen) ea.targetView.gotoFullscreen();
+  if(enableFullscreen) {
+    requestFullscreen ();
+  }
   setTimeout(()=>toggleUIVisibility(true),100);
   
   // Create floating toolbar modal
@@ -193,7 +220,9 @@ async function run() {
     toggleUIVisibility(false);
     
     // Exit fullscreen
-    if(ea.targetView && enableFullscreen) ea.targetView.exitFullscreen();
+    if(ea.targetView && enableFullscreen) {
+      exitFullscreen();
+    }
     clearInterval(autocloseTimer);
     delete window.excalidrawPalmGuard;
   };
